@@ -1,0 +1,149 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Screens/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/kenvector_future.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Sprites/backgrounds/greenhouse.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/flowers/2Orange.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/flowers/RoseRed.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/flowers/1Blue.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/flowers/Pink.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/flowers/1Yellow.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/flowers/3Orange.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/flowers/Purple.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Sprites/flowers/RoseBlack.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/ui/textbox.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 11
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 19
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Main Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Credit" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 400.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = SubResource( 1 )
+text = "Music from https://filmmusic.io
+\"Beauty Flow\" by Kevin MacLeod (https://incompetech.com)
+License: CC BY"
+
+[node name="Background" type="Control" parent="."]
+editor/display_folded = true
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Sprite" type="Sprite" parent="Background"]
+position = Vector2( 512, 300 )
+scale = Vector2( 20, 20 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="Background"]
+position = Vector2( 236.295, 493.039 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Sprite10" type="Sprite" parent="Background"]
+position = Vector2( 381.855, 414.137 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 1
+texture = ExtResource( 5 )
+
+[node name="Sprite3" type="Sprite" parent="Background"]
+position = Vector2( 236.295, 376.482 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="Sprite4" type="Sprite" parent="Background"]
+position = Vector2( 240.612, 242.657 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="Sprite5" type="Sprite" parent="Background"]
+position = Vector2( 786.704, 249.132 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="Sprite6" type="Sprite" parent="Background"]
+position = Vector2( 743.534, 393.749 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+
+[node name="Sprite7" type="Sprite" parent="Background"]
+position = Vector2( 816.922, 559.951 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="Sprite8" type="Sprite" parent="Background"]
+position = Vector2( 339.901, 134.734 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="Sprite9" type="Sprite" parent="Background"]
+position = Vector2( 616.185, 72.1382 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 11 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 404.0
+
+[node name="Control" type="Control" parent="CenterContainer"]
+margin_left = 512.0
+margin_top = 98.0
+margin_right = 512.0
+margin_bottom = 98.0
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/Control"]
+modulate = Color( 0.556863, 0.729412, 0.537255, 1 )
+margin_left = -224.0
+margin_top = -89.0
+margin_right = 222.66
+margin_bottom = 87.73
+rect_min_size = Vector2( 446.66, 176.73 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="VBox" type="VBoxContainer" parent="CenterContainer/Control"]
+margin_left = -200.0
+margin_top = -65.0
+margin_right = 200.0
+margin_bottom = 65.0
+custom_constants/separation = 9
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/Control/VBox"]
+margin_top = 16.0
+margin_right = 408.0
+margin_bottom = 76.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = SubResource( 2 )
+text = "Flower Defense"
+align = 1
+valign = 1
+
+[node name="PlayButton" type="Button" parent="CenterContainer/Control/VBox"]
+margin_top = 85.0
+margin_right = 408.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 3 )
+text = "Story"

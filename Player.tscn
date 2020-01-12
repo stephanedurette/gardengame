@@ -1,0 +1,245 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://GameObjects/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://GameObjects/Player/Paintball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Sprites/brushes/brush_blue.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/brushes/brush_red.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/brushes/brush_yellow.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/brushes/brush_white.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/palette/blue_03.png" type="Texture" id=7]
+[ext_resource path="res://Animations/Player/switch_blue.anim" type="Animation" id=8]
+[ext_resource path="res://Animations/Player/switch_red.anim" type="Animation" id=9]
+[ext_resource path="res://Animations/Player/switch_yellow.anim" type="Animation" id=10]
+[ext_resource path="res://Assets/Sprites/player/body_test.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/player/head_00.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites/player/hand_test.png" type="Texture" id=13]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Setup"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:can_shoot")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BrushPivot:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -116.24 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BrushPivot:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 37.1116, 3.72713 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:can_shoot")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BrushPivot:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -116.24, -223.323, -476.2 ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "shoot_paintball"
+}, {
+"args": [  ],
+"method": "reset_brush_color"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Brush_Anim:playback_speed")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("BrushPivot:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 37.1116, 3.72713 ), Vector2( 62.5963, 3.72713 ), Vector2( 37.1116, 3.72713 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Setup"
+length = 0.01
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:can_switch")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PalettePivot/PaletteSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PalettePivot:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -116.775 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Palette_Anim:playback_speed")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3.0 ]
+}
+
+[node name="Player" type="Node2D"]
+script = ExtResource( 1 )
+paintBall = ExtResource( 2 )
+brushColors = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ]
+can_shoot = false
+
+[node name="Brush_Anim" type="AnimationPlayer" parent="."]
+playback_speed = 2.0
+anims/Setup = SubResource( 1 )
+anims/Shoot = SubResource( 2 )
+
+[node name="Palette_Anim" type="AnimationPlayer" parent="."]
+playback_speed = 3.0
+anims/Setup = SubResource( 3 )
+anims/switch_blue = ExtResource( 8 )
+anims/switch_red = ExtResource( 9 )
+anims/switch_yellow = ExtResource( 10 )
+
+[node name="Body" type="Sprite" parent="."]
+modulate = Color( 0.768627, 0.211765, 0.694118, 1 )
+z_index = -1
+texture = ExtResource( 11 )
+
+[node name="HeadPivot" type="Position2D" parent="."]
+position = Vector2( 0, -36.9606 )
+
+[node name="HeadSprite" type="Sprite" parent="HeadPivot"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="PalettePivot" type="Position2D" parent="."]
+position = Vector2( -24.8863, 1.06558 )
+rotation = -2.03811
+
+[node name="PaletteSprite" type="Sprite" parent="PalettePivot"]
+position = Vector2( 0, -2.56671 )
+texture = ExtResource( 7 )
+
+[node name="Hand" type="Sprite" parent="PalettePivot/PaletteSprite"]
+position = Vector2( 0.340561, 3.06505 )
+z_index = -1
+texture = ExtResource( 13 )
+
+[node name="BrushPivot" type="Position2D" parent="."]
+position = Vector2( 37.1116, 3.72713 )
+rotation = -2.02877
+
+[node name="BrushSprite" type="Sprite" parent="BrushPivot"]
+position = Vector2( 0, -30.2872 )
+texture = ExtResource( 3 )
+
+[node name="Hand" type="Sprite" parent="BrushPivot/BrushSprite"]
+position = Vector2( 0.513351, 15.9136 )
+scale = Vector2( 0.71, 1 )
+texture = ExtResource( 13 )
+
+[node name="ShootPosition" type="Position2D" parent="."]
+position = Vector2( 76.9063, 47.719 )

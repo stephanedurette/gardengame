@@ -1,0 +1,214 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Screens/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/critters/boss-rabbit-grey.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/backgrounds/tileset_dirt/tileset6.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/ui/head_crying.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/ui/tear.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/palette/_00.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/brushes/brush_white.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/kenvector_future.ttf" type="DynamicFontData" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 51
+outline_size = 5
+outline_color = Color( 0.490196, 0.109804, 0.109804, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 19
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+font_data = ExtResource( 8 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Background" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="boss-rabbit-grey" type="Sprite" parent="Background"]
+modulate = Color( 0.117647, 0.117647, 0.117647, 1 )
+position = Vector2( 680.594, 96.2527 )
+scale = Vector2( 51, 51 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="Ground" type="Node" parent="Background"]
+editor/display_folded = true
+
+[node name="tileset6" type="Sprite" parent="Background/Ground"]
+position = Vector2( 371.853, 387.451 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset13" type="Sprite" parent="Background/Ground"]
+position = Vector2( 371.853, 295.371 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset9" type="Sprite" parent="Background/Ground"]
+position = Vector2( 557.767, 387.451 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset10" type="Sprite" parent="Background/Ground"]
+position = Vector2( 557.767, 295.371 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset7" type="Sprite" parent="Background/Ground"]
+position = Vector2( 467.439, 387.451 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset12" type="Sprite" parent="Background/Ground"]
+position = Vector2( 467.439, 295.371 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset8" type="Sprite" parent="Background/Ground"]
+position = Vector2( 653.353, 387.451 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="tileset11" type="Sprite" parent="Background/Ground"]
+position = Vector2( 653.353, 295.371 )
+scale = Vector2( 2, 2 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="head_00" type="Sprite" parent="Background"]
+position = Vector2( 502.922, 322.266 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 4 )
+
+[node name="tear" type="Sprite" parent="Background"]
+position = Vector2( 452.296, 295.699 )
+rotation = 2.04784
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="tear3" type="Sprite" parent="Background"]
+position = Vector2( 562.926, 299.507 )
+rotation = 3.63657
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="tear2" type="Sprite" parent="Background"]
+position = Vector2( 369.047, 309.398 )
+rotation = 0.864012
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="tear6" type="Sprite" parent="Background"]
+position = Vector2( 379.068, 265.973 )
+rotation = 1.30633
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="tear4" type="Sprite" parent="Background"]
+position = Vector2( 633.98, 283.52 )
+rotation = -1.00711
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="tear5" type="Sprite" parent="Background"]
+position = Vector2( 632.31, 261.807 )
+rotation = -1.66664
+scale = Vector2( 4, 4 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="_00" type="Sprite" parent="Background"]
+position = Vector2( 577.199, 395.279 )
+rotation = -2.87179
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="brush_white" type="Sprite" parent="Background"]
+position = Vector2( 304.834, 417.372 )
+rotation = -1.78563
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 377.0
+
+[node name="VBox" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 312.0
+margin_top = 10.0
+margin_right = 712.0
+margin_bottom = 213.0
+custom_constants/separation = 9
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/VBox"]
+margin_right = 400.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = SubResource( 1 )
+text = "Game Over"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="CenterContainer/VBox"]
+margin_top = 69.0
+margin_right = 400.0
+margin_bottom = 129.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = SubResource( 2 )
+text = "The Evil Critters Have 
+devoured your garden"
+align = 1
+valign = 1
+
+[node name="Restart" type="Button" parent="CenterContainer/VBox"]
+margin_top = 138.0
+margin_right = 400.0
+margin_bottom = 166.0
+custom_fonts/font = SubResource( 3 )
+text = "Try Again"
+
+[node name="MainMenu" type="Button" parent="CenterContainer/VBox"]
+margin_top = 175.0
+margin_right = 400.0
+margin_bottom = 203.0
+custom_fonts/font = SubResource( 3 )
+text = "Back To Main Menu"
+
+[node name="Label3" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -300.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = SubResource( 4 )
+text = "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!"
+align = 1
+valign = 1

@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://GameObjects/Enemies/Critter/Critter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GameObjects/Enemies/Bunny/Bunny.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sprites/critters/rabbit_outlined.png" type="Texture" id=3]
+[ext_resource path="res://Animations/Enemies/Rabbit/Death.anim" type="Animation" id=4]
+[ext_resource path="res://Animations/Enemies/Rabbit/Idle.anim" type="Animation" id=5]
+[ext_resource path="res://Animations/Enemies/Rabbit/Running.anim" type="Animation" id=6]
+[ext_resource path="res://Assets/Sprites/bullets/white_paint.png" type="Texture" id=7]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 21.4694
+
+[node name="Bunny" instance=ExtResource( 1 )]
+scale = Vector2( 2, 2 )
+script = ExtResource( 2 )
+can_jump = false
+is_dead = true
+
+[node name="Sprite" parent="." index="0"]
+rotation = 8.63938
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Anim" parent="." index="2"]
+anims/Death = ExtResource( 4 )
+anims/Idle = ExtResource( 5 )
+anims/Running = ExtResource( 6 )
+
+[node name="ColorLabel" parent="." index="3"]
+modulate = Color( 1, 1, 1, 0.0909091 )
+
+[node name="Shadow" type="Sprite" parent="." index="4"]
+modulate = Color( 0, 0, 0, 0 )
+position = Vector2( 1.58669, 9.52007 )
+z_as_relative = false
+texture = ExtResource( 7 )

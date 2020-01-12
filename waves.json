@@ -1,0 +1,265 @@
+{
+	"colorless_squirrels":[
+		{"delay":1, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":1, "type":0, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":1, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":1, "type":0, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": -1},
+
+		{"delay":0.5, "type":0, "movespeed": 300, "position": 4, "color": -1},
+		{"delay":0.5, "type":0, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":0.5, "type":0, "movespeed": 300, "position": 2, "color": -1},
+		{"delay":0.5, "type":0, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":1, "type":0, "movespeed": 300, "position": 0, "color": -1},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 4, "color": -1},
+		{"delay":0, "type":0, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":0, "type":0, "movespeed": 400, "position": 2, "color": -1},
+		{"delay":0, "type":0, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+	],
+	"colored_squirrels":[
+		{"delay":2, "type":0, "movespeed": 100, "position": 0, "color": 0},
+		{"delay":2, "type":0, "movespeed": 100, "position": 1, "color": 0},
+		{"delay":2, "type":0, "movespeed": 100, "position": 2, "color": 1},
+		{"delay":2, "type":0, "movespeed": 100, "position": 3, "color": 2},
+		{"delay":2, "type":0, "movespeed": 100, "position": 4, "color": 0},
+
+		{"delay":1, "type":0, "movespeed": 200, "position": 2, "color": 2},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": 1},
+		{"delay":1, "type":0, "movespeed": 200, "position": 1, "color": 1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 4, "color": 0},
+		{"delay":5, "type":0, "movespeed": 200, "position": 0, "color": 0},
+
+		{"delay":2, "type":0, "movespeed": 300, "position": 2, "color": 0},
+		{"delay":2, "type":0, "movespeed": 300, "position": 2, "color": 1},
+		{"delay":2, "type":0, "movespeed": 300, "position": 2, "color": 2},
+		{"delay":2, "type":0, "movespeed": 300, "position": 3, "color": 0},
+		{"delay":2, "type":0, "movespeed": 300, "position": 3, "color": 1},
+		{"delay":2, "type":0, "movespeed": 300, "position": 3, "color": 2},
+	],
+	"rabbits":[
+		{"delay":2, "type":1, "movespeed": 100, "position": 0, "color": -1},
+
+		{"delay":1, "type":1, "movespeed": 150, "position": 2, "color": -1},
+		{"delay":3, "type":1, "movespeed": 150, "position": 4, "color": -1},
+		{"delay":3, "type":1, "movespeed": 150, "position": 4, "color": -1},
+		
+		{"delay":0, "type":1, "movespeed": 150, "position": 4, "color": 0},
+		{"delay":3, "type":1, "movespeed": 150, "position": 0, "color": 0},
+
+		{"delay":0, "type":1, "movespeed": 150, "position": 3, "color": 1},
+		{"delay":3, "type":1, "movespeed": 150, "position": 1, "color": 1},
+
+		{"delay":0, "type":1, "movespeed": 150, "position": 4, "color": 2},
+		{"delay":3, "type":1, "movespeed": 150, "position": 0, "color": 2},
+	],
+	"green_squirrel":[
+		{"delay":0, "type":0, "movespeed": 50, "position": 0, "color": 4},
+	],
+	"secondary_colors":[
+		{"delay":8, "type":0, "movespeed": 100, "position": 2, "color": 4},
+		{"delay":0, "type":0, "movespeed": 100, "position": 1, "color": 3},
+		{"delay":4, "type":0, "movespeed": 100, "position": 3, "color": 5},
+
+		{"delay":3, "type":1, "movespeed": 150, "position": 2, "color": 2},
+
+		{"delay":0, "type":1, "movespeed": 150, "position": 1, "color": 1},
+		{"delay":2, "type":1, "movespeed": 150, "position": 3, "color": 0},
+
+		{"delay":0, "type":1, "movespeed": 150, "position": 0, "color": -1},
+		{"delay":8, "type":1, "movespeed": 150, "position": 4, "color": -1},
+
+		{"delay":4, "type":0, "movespeed": 200, "position": 2, "color": 4},
+		{"delay":4, "type":0, "movespeed": 200, "position": 1, "color": 3},
+		{"delay":4, "type":0, "movespeed": 200, "position": 3, "color": 5},
+	],
+	"first_birds":[
+		{"delay":4, "type":2, "movespeed": 100, "position": 2, "color": -1, "amplitude": 4, "frequency": 3},
+		{"delay":0, "type":2, "movespeed": 100, "position": 0, "color": -1, "amplitude": 4, "frequency": 3},
+		{"delay":4, "type":2, "movespeed": 100, "position": 3, "color": -1, "amplitude": 4, "frequency": 3},
+
+		{"delay":1, "type":2, "movespeed": 200, "position": 2, "color": 0, "amplitude": 10, "frequency": 6},
+		{"delay":1, "type":2, "movespeed": 200, "position": 2, "color": 0, "amplitude": 10, "frequency": 6},
+		{"delay":1, "type":2, "movespeed": 200, "position": 2, "color": 0, "amplitude": 10, "frequency": 6},
+		{"delay":5, "type":2, "movespeed": 200, "position": 2, "color": 0, "amplitude": 10, "frequency": 6},
+
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 1, "amplitude": 6, "frequency": 2},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 0, "amplitude": 6, "frequency": 2},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 2, "amplitude": 6, "frequency": 2},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 0, "amplitude": 6, "frequency": 2},
+		{"delay":8, "type":2, "movespeed": 100, "position": 2, "color": 1, "amplitude": 6, "frequency": 2},
+
+		{"delay":5, "type":2, "movespeed": 300, "position": 0, "color": 3, "amplitude": 1, "frequency": 3},
+		{"delay":5, "type":2, "movespeed": 300, "position": 1, "color": 4, "amplitude": 1, "frequency": 3},
+		{"delay":5, "type":2, "movespeed": 300, "position": 2, "color": 3, "amplitude": 1, "frequency": 3},
+		{"delay":5, "type":2, "movespeed": 300, "position": 3, "color": 4, "amplitude": 1, "frequency": 3},
+		{"delay":5, "type":2, "movespeed": 300, "position": 4, "color": 3, "amplitude": 1, "frequency": 3},
+
+		{"delay":6, "type":2, "movespeed": 200, "position": 4, "color": 5, "amplitude": 2, "frequency": 6},
+		{"delay":6, "type":2, "movespeed": 200, "position": 0, "color": 5, "amplitude": 2, "frequency": 6},
+	],
+	"first_mix":[
+		{"delay":3, "type":0, "movespeed": 300, "position": 2, "color": 3},
+		{"delay":0, "type":0, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":3, "type":0, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0, "type":0, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":0, "movespeed": 300, "position": 2, "color": 5},
+		{"delay":6, "type":0, "movespeed": 300, "position": 4, "color": -1},
+		
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 150, "position": 2, "color": 4},
+		{"delay":6, "type":1, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 1, "amplitude": 3, "frequency": 4},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 0, "amplitude": 7, "frequency": 4},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 2, "amplitude": 3, "frequency": 4},
+		{"delay":0.5, "type":2, "movespeed": 100, "position": 2, "color": 0, "amplitude": 7, "frequency": 4},
+		{"delay":12, "type":2, "movespeed": 100, "position": 2, "color": 1, "amplitude": 3, "frequency": 4},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": -1},
+
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":5, "type":1, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":2, "type":1, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":2, "type":1, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": -1},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": -1},
+	],
+
+	"second_mix":[
+		{"delay":3, "type":0, "movespeed": 300, "position": 2, "color": 2},
+		{"delay":0, "type":0, "movespeed": 300, "position": 3, "color": 0},
+		{"delay":3, "type":0, "movespeed": 300, "position": 4, "color": 1},
+
+		{"delay":0, "type":0, "movespeed": 300, "position": 0, "color": 1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": 5},
+		{"delay":6, "type":0, "movespeed": 300, "position": 4, "color": 1},
+		
+		{"delay":0, "type":1, "movespeed": 400, "position": 0, "color": 0},
+		{"delay":0, "type":0, "movespeed": 100, "position": 2, "color": 4},
+		{"delay":6, "type":1, "movespeed": 400, "position": 4, "color": 2},
+
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 2, "color": 1, "amplitude": 5, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 3, "color": 0, "amplitude": 8, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 2, "color": 2, "amplitude": 5, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 3, "color": 0, "amplitude": 8, "frequency": 6},
+		{"delay":12, "type":2, "movespeed": 200, "position": 2, "color": 1, "amplitude": 5, "frequency": 6},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": 0},
+		{"delay":0, "type":0, "movespeed": 200, "position": 1, "color": 0},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": 0},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": 0},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": 0},
+
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": 1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 1, "color": 1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": 1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 3, "color": 1},
+		{"delay":5, "type":1, "movespeed": 300, "position": 4, "color": 1},
+
+		{"delay":0, "type":1, "movespeed": 300, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 300, "position": 2, "color": -1},
+		{"delay":0, "type":1, "movespeed": 300, "position": 3, "color": -1},
+		{"delay":2, "type":1, "movespeed": 300, "position": 4, "color": -1},
+
+		{"delay":0, "type":0, "movespeed": 300, "position": 0, "color": 2},
+		{"delay":0, "type":0, "movespeed": 300, "position": 1, "color": 2},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": 2},
+		{"delay":0, "type":0, "movespeed": 300, "position": 3, "color": 2},
+		{"delay":2, "type":0, "movespeed": 300, "position": 4, "color": 2},
+
+		{"delay":0.1, "type":0, "movespeed": 200, "position": 0, "color": 0},
+		{"delay":0.1, "type":1, "movespeed": 200, "position": 1, "color": 0},
+		{"delay":0.1, "type":0, "movespeed": 200, "position": 2, "color": 0},
+		{"delay":0.1, "type":1, "movespeed": 200, "position": 3, "color": 0},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": 0},
+
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":2, "movespeed": 200, "position": 1, "color": -1, "amplitude":5, "frequency":2},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":2, "movespeed": 200, "position": 3, "color": -1, "amplitude":5, "frequency":2},
+		{"delay":2, "type":0, "movespeed": 200, "position": 4, "color": -1},
+	],
+	"third_mix":[
+		{"delay":2, "type":0, "movespeed": 300, "position": 0, "color": 3},
+		{"delay":2, "type":0, "movespeed": 300, "position": 1, "color": 4},
+		{"delay":2, "type":0, "movespeed": 300, "position": 2, "color": 5},
+		{"delay":2, "type":0, "movespeed": 300, "position": 3, "color": 4},
+		{"delay":6, "type":0, "movespeed": 300, "position": 4, "color": 3},
+
+		{"delay":3, "type":1, "movespeed": 300, "position": 4, "color": 4},
+		{"delay":3, "type":1, "movespeed": 300, "position": 3, "color": 5},
+		{"delay":3, "type":1, "movespeed": 300, "position": 2, "color": 4},
+		{"delay":3, "type":1, "movespeed": 300, "position": 1, "color": 3},
+		{"delay":3, "type":1, "movespeed": 300, "position": 0, "color": 5},
+
+		{"delay":3, "type":2, "movespeed": 300, "position": 0, "color": 3, "amplitude": 2, "frequency": 6},
+		{"delay":3, "type":2, "movespeed": 300, "position": 1, "color": 4, "amplitude": 2, "frequency": 6},
+		{"delay":3, "type":2, "movespeed": 300, "position": 2, "color": 5, "amplitude": 2, "frequency": 6},
+		{"delay":3, "type":2, "movespeed": 300, "position": 3, "color": 5, "amplitude": 2, "frequency": 6},
+		{"delay":12, "type":2, "movespeed": 300, "position": 4, "color": 3, "amplitude": 2, "frequency": 6},
+
+		{"delay":0, "type":2, "movespeed": 200, "position": 0, "color": 2,"amplitude": 3, "frequency": 6},
+		{"delay":0, "type":0, "movespeed": 400, "position": 1, "color": 2},
+		{"delay":0, "type":1, "movespeed": 300, "position": 2, "color": 2},
+		{"delay":0, "type":0, "movespeed": 400, "position": 3, "color": 2},
+		{"delay":2, "type":2, "movespeed": 200, "position": 4, "color": 2,"amplitude": 3, "frequency": 6},
+
+		{"delay":0, "type":2, "movespeed": 300, "position": 0, "color": 1,"amplitude": 1, "frequency": 6},
+		{"delay":0, "type":1, "movespeed": 200, "position": 1, "color": 1},
+		{"delay":0, "type":0, "movespeed": 100, "position": 2, "color": 1},
+		{"delay":0, "type":1, "movespeed": 200, "position": 3, "color": 1},
+		{"delay":2, "type":2, "movespeed": 300, "position": 4, "color": 1,"amplitude": 1, "frequency": 6},
+	],
+	"boss_squirrel":[
+		{"delay":0, "type":0, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":0, "type":0, "movespeed": 200, "position": 4, "color": -1},
+	],
+	"boss_rabbit":[
+		{"delay":0, "type":1, "movespeed": 200, "position": 0, "color": -1},
+		{"delay":0, "type":1, "movespeed": 200, "position": 1, "color": -1},
+		{"delay":0, "type":1, "movespeed": 200, "position": 2, "color": -1},
+		{"delay":0, "type":1, "movespeed": 200, "position": 3, "color": -1},
+		{"delay":0, "type":1, "movespeed": 200, "position": 4, "color": -1},
+	],
+	"boss_bird":[
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 1, "color": -1,"amplitude": 4, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 1, "color": -1,"amplitude": 4, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 1, "color": -1,"amplitude": 4, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 1, "color": -1,"amplitude": 4, "frequency": 6},
+		{"delay":0.5, "type":2, "movespeed": 200, "position": 1, "color": -1,"amplitude": 4, "frequency": 6},
+	]
+}

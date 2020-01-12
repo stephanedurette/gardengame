@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://GameObjects/Enemies/Critter/Critter.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/critters/grey - squirrel.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/kenvector_future_thin.ttf" type="DynamicFontData" id=3]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 26.1285, 10 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Critter" type="Area2D"]
+z_index = 1
+script = ExtResource( 1 )
+isEnabled = false
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 6.07 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+
+[node name="ColorLabel" type="Label" parent="."]
+margin_left = -34.6637
+margin_top = -34.6637
+margin_right = 35.3363
+margin_bottom = -11.6637
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
